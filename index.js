@@ -20,8 +20,8 @@ mongoose
     }
   );
 
-const DeviceRoute = require("./Route/Device.Route");
-const NotiRoute = require("./Route/Noti.Route");
+const DeviceRoute = require("./Route/Device.Route.js");
+const NotiRoute = require("./Route/Noti.Route.js");
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
