@@ -1,5 +1,5 @@
 const express = require("express");
-let NotiModel = require("../Model/Noti.model");
+let NotiModel = require("../Model/NotiModel");
 class NotiController {
   async createNoti(req, res) {
     try {

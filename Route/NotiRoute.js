@@ -1,6 +1,6 @@
 const express = require("express");
 const NotiRoute = express.Router();
-const NotiController = require("../Controllers/Noti.Controller");
+const NotiController = require("../Controllers/NotiController");
 
 NotiRoute.post("/", NotiController.createNoti);
 NotiRoute.get("/", NotiController.getNoti);

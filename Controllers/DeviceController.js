@@ -1,5 +1,5 @@
 const express = require("express");
-let DeviceModel = require("../Model/Device.model");
+let DeviceModel = require("../Model/DeviceModel");
 class DeviceController {
   async createDevice(req, res) {
     try {

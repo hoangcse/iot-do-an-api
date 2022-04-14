@@ -1,6 +1,6 @@
 const express = require("express");
 const DeviceRoute = express.Router();
-const DeviceController = require("../Controllers/Device.Controller.js");
+const DeviceController = require("../Controllers/DeviceController.js");
 
 // DeviceRoute.post("/", DeviceController.createDevice);
 DeviceRoute.get("/:id", DeviceController.getDevice);
