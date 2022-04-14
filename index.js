@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const mongoose = require("mongoose");
 const config = require("./configure.js");
@@ -29,5 +29,6 @@ app.use(bodyParser.json());
 app.use("/device", DeviceRoute);
 app.use("/noti", NotiRoute);
 app.listen(PORT, function () {
-  console.log("Server is running on Port:", PORT);
+  const port = server.address().port;
+  console.log("Server is running on Port:", port);
 });
