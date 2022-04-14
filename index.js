@@ -20,8 +20,8 @@ mongoose
     }
   );
 
-const DeviceRoute = require("./Route/Device.route");
-const NotiRoute = require("./Route/Noti.route");
+const DeviceRoute = require("./Route/Device.Route");
+const NotiRoute = require("./Route/Noti.Route");
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -29,6 +29,6 @@ app.use(bodyParser.json());
 app.use("/device", DeviceRoute);
 app.use("/noti", NotiRoute);
 app.listen(PORT, function () {
-  const port = server.address().port;
-  console.log("Server is running on Port:", port);
+  // const port = app.address().port;
+  console.log("Server is running on Port:", PORT);
 });
