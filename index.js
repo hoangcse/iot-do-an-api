@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 const cors = require("cors");
 const mongoose = require("mongoose");
 const config = require("./configure.js");
-const DeviceRoute = require("./Route/Device.Route.js");
+const DeviceRoute = require("./Route/DeviceRoute.js");
 const NotiRoute = require("./Route/Noti.Route.js");
 mongoose.Promise = global.Promise;
 mongoose
