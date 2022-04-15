@@ -26,11 +26,11 @@ mongoose
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use("/device", DeviceRoute);
+app.use("/noti", NotiRoute);
 app.use("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/Home.html"));
 });
-app.use("/device", DeviceRoute);
-app.use("/noti", NotiRoute);
 app.listen(PORT, function () {
   // const port = app.address().port;
   console.log("Server is running on Port:", PORT);
