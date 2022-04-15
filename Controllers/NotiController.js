@@ -32,7 +32,7 @@ class NotiController {
   async deleteNoti(req, res) {
     try {
       const idNoti = req.params.id;
-      await NotiModel.deleteOne({ id: idNoti });
+      await NotiModel.deleteOne({ _id: idNoti });
       res.send({ success: "delete done" });
     } catch (error) {
       console.log(error);
