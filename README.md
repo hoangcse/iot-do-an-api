@@ -1,1 +1,1 @@
-<a href="https://iot-do-an-api.herokuapp.com/" target="_blank">Link API</a>
+[Stackoverflow The Key](https://stackoverflow.blog/2021/03/31/the-key-copy-paste/){:target="\_blank" rel="noopener"}
