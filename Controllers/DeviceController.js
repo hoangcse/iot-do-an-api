@@ -4,7 +4,7 @@ class DeviceController {
   async createDevice(req, res) {
     try {
       const newDevice = new DeviceModel({
-        name: "Light",
+        name: "Led",
         auto: true,
         hourFrom: 7,
         hourTo: 10,
